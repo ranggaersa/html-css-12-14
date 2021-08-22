@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:cursive;
+} 
+
+.logo img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.header {
+  margin: 1%;
+}
+
+.nav-left ul,
+.nav-right ul {
+  list-style: none;
+}
+
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color:cadetblue;
+}
+
+.nav-left a:hover {
+  background: lightpink;
+}
+
+.nav-right a:hover {
+  background:rgb(221, 196, 200);
+}
+
+@media screen and (min-width: 560px) {
+.header{
+  width: 960px;
+  margin: auto;
+  display: flex;
+  margin-top: 1%;
+  justify-content: space-between;
+  }
+
+.nav-left ul {
+  display: flex;
+  }
+
+.nav-right ul {
+  display: flex;
+  }
+
+.nav-left,
+.nav-right {
+  background: none;
+  }
+
+.nav-left a,
+.nav-right a {
+  color: cadetblue;
+  }
+}
+
+/* main */
+
+.main {
+  margin-top: 20px;
+}
+
+.main-left img {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.main-right {
+  text-align: justify;
+  margin-top: 120px;
+}
+
+@media (min-width: 560px) {
+  .main {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .main-left img {
+    width: 600px;
+  }
+
+  .main-right img {
+    margin: auto;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .main-right h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: monospace;
+  }
+}
+
+/* produk */
+
+.display {
+  margin-top: 3%;
+  text-align: center;
+  color: rosybrown;
+}
+
+.image img {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.produk-content {
+  text-align: center;
+  margin: 20px;
+}
+
+.deskripsi p {
+  font-size: 15px;
+}
+
+@media (min-width: 560px) {
+  .produk {
+    width: 960px;
+    margin: auto;
+    display: flex;
+  }
+  .produk-content {
+    height: 300px;
+  }
+
+  .image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .image img {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+
+  .display {
+    font-size: 30px;
+  }
+}
+
+/* informasi */
+
+.info {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-content {
+  height: 70px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.icon img {
+  width: 50px;
+  display: block;
+  margin-right: 10px;
+}
+
+.info-isi h2 {
+  font-size: 15px;
+}
+
+.info-isi p {
+  font-size: 12px;
+}
+
+@media (min-width: 560px) {
+  .info {
+    margin-top: 230px;
+        }
+}
+
+/* medsos */
+
+.medsos-icon img {
+  width: 50px;
+  margin: 10px;
+}
+
+.medsos-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.medsos-isi {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.medsos-form {
+  height: 50px;
+  background: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medsos-form form input {
+  width: 200px;
+  height: 20px;
+  background:lavender;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: -4px;
+}
+
+.medsos-form form input[type="email"] {
+  padding: 14px;
+}
+
+.medsos-form form button {
+  height: 28px;
+  padding: 5px;
+  text-transform: uppercase;
+  background:lavender;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (min-width: 560px) {
+  .medsos {
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-bottom: 100px;
+  background: cornsilk;
+  display: flex;
+}
+
+.logo-bank img {
+  width: 70px;
+}
+
+.identitas {
+  flex: 1;
+}
+
+.sitemap {
+  flex: 1;
+}
+
+.sitemap li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.sitemap li a{
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.payment {
+  flex: 1;
+}
+
+.sitemap h2, 
+.identitas h2 {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.identitas p {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.sitemap a {
+  font-size: 12px;
+}
+
+.bank p {
+  font-size: 10px;
+}
+
+.bank h3 {
+  font-size: 12px;
+}
+
+.bank {
+  padding-bottom: 15px;
+}
+
+@media (min-width: 560px) {
+  footer {
+    width: 960px;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .sitemap h2, 
+  .identitas h2 {
+  font-size: 20px;
+  }
+
+  .identitas p {
+    font-size: 15px;
+  }
+  
+  .sitemap a {
+    font-size: 15px;
+  }
+}
